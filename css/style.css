@@ -103,3 +103,13 @@ dialog dl{margin:var(--s2) 0 var(--s3);display:grid;grid-template-columns:auto 1
   .hero .btn-row, .hero .social { justify-content: center; }
   .hero .btn { min-height: 48px; font-size: .9375rem; }
 }
+
+.viewport{overflow:hidden;touch-action:pan-y;-webkit-user-select:none;user-select:none}
+.card img{-webkit-user-drag:none}
+.carousel-controls{flex-wrap:nowrap;max-width:100%}
+.dots{flex-wrap:wrap;justify-content:center;min-width:0}
+@media(max-width:639px){
+  .dots{display:none}
+  .carousel-controls{justify-content:space-between}
+  .count{flex:1}
+}
